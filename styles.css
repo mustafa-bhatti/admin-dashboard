@@ -14,7 +14,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Roboto",sans-serif;
-  --sidebar-color : rgb(0, 183, 255);
+  --sidebar-color : rgb(86, 192, 235);
 }
 
 .main-container {
@@ -122,12 +122,21 @@ input {
 .btn {
   background-color: var(--sidebar-color);
   width: 7.7rem;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.04rem;
   height: 3rem;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
   border-radius: 40px;
+  cursor: pointer;
+}
+
+button:active{
+  background-color: rgb(8, 8, 118);
 }
 
 
