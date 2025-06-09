@@ -1,3 +1,4 @@
+/* google font */
 .roboto-normal {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -6,10 +7,8 @@
   font-variation-settings:
     "wdth" 100;
 }
-
-
-
 * {
+  /* outline: 1px black solid; */
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -26,27 +25,35 @@
 .header{
   background-color: rgb(255, 255, 255);
   grid-column: 2 / 4;
-  padding: 20px;
+  padding: 20px 40px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+.search-bar{
+  margin-top: 0.3rem;
+}
 .search-container{
   display: flex;
+  gap: 10px;
+  height: 1.8rem;
 }
+/* icon base properties */
 .icon{
-  width: 2rem;
-  height: 2rem;
-  background-color: wheat;
+  width: 1.8rem;
+  height: 1.8rem;
+  /* background-color: rgb(255, 245, 227); */
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 form {
   width: 75%;
-
+  margin-right: 20px;
 }
 input {
   width: 100%;
   background-color: rgba(128, 128, 128, 0.153);
-  padding: 4px;
+  height: 100%;
   border: none;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -54,12 +61,31 @@ input {
   -o-border-radius: 20px;
   border-radius: 20px;
 }
+
+.search-icon {
+  background-image: url(images/magnify.png);
+
+}
+
 /* right upper side */
+
 .right-account{
   display: flex;
   background-color: white;
-  justify-content: space-evenly;
-  gap: 20px;
+  gap: 1.2rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: end;
+  font-weight: 700;
+}
+
+.bell{
+  background-image: url(images/bell.png);
+}
+.profile-image{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(images/pumpkin.png);
 }
 
 .sidebar {
