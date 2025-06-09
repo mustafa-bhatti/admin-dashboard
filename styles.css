@@ -27,8 +27,8 @@
   height: 2rem;
   background-color: wheat;
 }
-input {
-  width: 250%;
+input,form {
+  width: 75%;
   padding: 5px;
   border: none;
   -webkit-border-radius: 20px;
