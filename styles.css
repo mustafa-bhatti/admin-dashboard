@@ -14,6 +14,35 @@
 .header{
   background-color: red;
   grid-column: 2 / 4;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.search-container{
+  display: flex;
+}
+.icon{
+  width: 2rem;
+  height: 2rem;
+  background-color: wheat;
+}
+input {
+  width: 250%;
+  padding: 5px;
+  border: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+/* right upper side */
+.right-account{
+  display: flex;
+  background-color: white;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 
 .sidebar {
@@ -31,3 +60,4 @@
   background-color: purple;
   grid-column: 3;
 }
+
