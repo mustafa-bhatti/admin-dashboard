@@ -23,7 +23,7 @@
 }
 
 .header{
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   grid-column: 2 / 4;
   padding: 20px 40px;
   display: grid;
@@ -52,7 +52,7 @@ form {
 }
 input {
   width: 100%;
-  background-color: rgba(128, 128, 128, 0.153);
+  background-color: rgba(141, 161, 174, 0.153);
   height: 100%;
   border: none;
   -webkit-border-radius: 20px;
@@ -87,6 +87,33 @@ input {
   height: 2.5rem;
   background-image: url(images/pumpkin.png);
 }
+/* header bottom left */
+.welcome-msg{
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+  height: 4rem;
+  align-items: center;
+  line-height: 1.7rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+#name-large{
+  font-size: 1.3rem;
+}
+.profile-image-large{
+  background-image: url(images/pumpkin.png);
+  width: 4rem;
+  height: 4rem;
+
+}
+.account-actions{
+  display: flex;
+  margin-top: 1rem;
+}
+
+
+
 
 .sidebar {
   background-color: blue;
