@@ -7,7 +7,9 @@
   font-variation-settings:
     "wdth" 100;
 }
-
+html {
+  font-size: 16px;
+}
 * {
   /* outline: 1px black solid; */
   margin: 0px;
@@ -19,12 +21,13 @@
 
 .main-container {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 3fr 1fr;
+  height: 100%;
+  grid-template-columns :minmax(150px, 1fr) minmax(300px, 3fr) minmax(150px, 1fr);
   grid-template-rows: 1fr 4fr;
 }
 
 .header{
+  min-width: 0;
   background-color: white;
   grid-column: 2 / 4;
   padding: 20px 40px;
@@ -32,6 +35,7 @@
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+
 .search-bar{
   margin-top: 0.3rem;
 }
@@ -98,7 +102,8 @@ input {
   align-items: center;
   line-height: 1.7rem;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+
 }
 #name-large{
   font-size: 1.3rem;
@@ -107,7 +112,6 @@ input {
   background-image: url(images/pumpkin.png);
   width: 4rem;
   height: 4rem;
-
 }
 
 /* bottom header right */
@@ -120,12 +124,13 @@ input {
 }
 
 .btn {
+  min-width: 0;
+  flex: 1;
   background-color: var(--sidebar-color);
-  width: 7.7rem;
   border: none;
   color: white;
   font-weight: 700;
-  font-size: 1.04rem;
+  font-size: 1.04em;
   height: 3rem;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
@@ -138,7 +143,7 @@ input {
 button:active{
   background-color: rgb(8, 8, 118);
 }
-
+/* TODO fix the overflow when screen gets less than 800px */
 
 
 
