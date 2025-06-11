@@ -48,8 +48,8 @@ html {
 }
 /* icon base properties */
 .icon{
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 22px;
+  height: 22px;
   /* background-color: rgb(255, 245, 227); */
   background-repeat: no-repeat;
   background-size: contain;
@@ -225,19 +225,66 @@ button:active{
   justify-content: space-between;
 
 }
+
+/* Projects */
+
 .projects-container {
   grid-column: 2;
   grid-row:  3 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3,1fr);
+  gap: 30px;
   font-weight: 500;
-  padding-left: 20px;
-  padding-top: 20px;
+
+  padding: 20px;
+  margin-bottom: 40px;
+
   }
+.project-card{
+  background-color: white;
+  border-left: 10px solid rgb(255, 166, 0);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(143, 143, 143, 0.363);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+.project-card h2 { 
+  font-size: 20px;
+}
+.project-card p{
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 15px;
+  max-width: 80%;
+  text-align: justify;
+}
+.project-icons-row{
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+}
+.star-icon{
+  background-image: url(images/star.png);
+}
+.eye-icon{
+  background-image: url(images/eye.png);
+}
+.branch-icon{
+  background-image: url(images/branch.png);
+}
+
+
+/* left bar */
 .left-bar{
   background-color: purple;
   grid-column: 3;
   grid-row: 3 / -1;
+  margin-bottom: 60px;
 }
-/* Projects */
