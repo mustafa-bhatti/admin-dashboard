@@ -283,9 +283,38 @@ button:active{
 
 
 /* left bar */
-.left-bar{
-  background-color: purple;
+.right-bar{
   grid-column: 3;
   grid-row: 3 / -1;
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.msgs-card{
+  margin-right: 40px;
+  background-color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 400;
+  color: gray;
+}
+.msg:not(:last-child){
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(130, 128, 128, 0.582);
+}
+.msg h2{
+  color: black;
+  font-size: 15px;
 }
