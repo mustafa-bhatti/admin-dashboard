@@ -46,7 +46,7 @@ admin-dashboard/
     └── ghost.png
 ```
 ## Screenshot
-(images/screenshot.png)
+![Admin-Dashboard Screeshot](images/screenshot.png)
 ## Customization
 
 - **Change User Info:** Edit the user name and profile image in `index.html`.
