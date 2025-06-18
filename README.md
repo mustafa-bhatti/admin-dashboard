@@ -56,7 +56,7 @@ admin-dashboard/
 ## Credits
 
 - Design and code by G. Mustafa.
-- Icons and images are local assets (ensure the `images` folder is included).
+- Icons and images are local assets.
 
 ## License
 
